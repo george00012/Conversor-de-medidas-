@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&family=Roboto+Mono:ital,wght@0,600;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&family=Phudu:wght@800&family=Source+Serif+Pro:ital,wght@0,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #eee; 
+}
+
+main {
+    margin: 1rem;
+    padding: 1rem;
+    height: auto;
+    background-color: #ff5722;
+    border-radius: 0.7rem;
+    height: 45rem;
+}
+
+@media (min-width: 790px) {
+    main {
+        width: 50rem;
+        height: 25rem;
+        background-color: #ff5722;
+        border-radius: 0.8rem;
+    }
+}
+
+h1 {
+    margin: 2rem 0;
+    text-align: center;
+    color: #eeeeee;
+}
+
+@media (min-width: 790px) {
+    h1 {
+        font-size: 2.3rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+        margin: 2.5rem 0;
+        text-transform: uppercase;
+    }
+}
+
+.cont {
+    display: grid;
+    gap: 3rem;
+    padding: 1rem 0 2rem 0;
+}
+
+@media (min-width: 790px) {
+    .cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 5rem;
+    }
+}
+
+.contenido {
+    display: grid;
+    place-content: center;
+}
+
+#seleccionar {
+    width: 17rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+input {
+    margin-top: 0.7rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    border: none;
+    user-select: none;
+    background: #2d4059;
+    color: #eee;
+}
+
+#inputType,
+#resultType {
+    height: 2.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.6rem;
+    background: #2d4059;
+    color:#fff;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+button {
+    padding: 1rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #2d4059;
+    color: #eee;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #eee;
+}
+
+@media (min-width: 790px) {
+    .cont2 {
+        display: grid;
+        grid-template-rows: 5rem 5rem;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .descripcion {
+        padding-top: 0;
+        font-size: 1.4rem;
+    }
+}
